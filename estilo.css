@@ -1,0 +1,424 @@
+/*
+#00b5e2=azul brillante
+#ffcc99=crema
+#4f758b=azul claro
+#0b4f6c=azul oscuro
+*/
+header{
+	text-align: center;
+	margin: auto;
+  padding: 80px;
+  padding-top:10px;
+	background-image: url("https://1.bp.blogspot.com/-nJUb6xNIFao/XsYLAceyzKI/AAAAAAAAOeg/z34s7AJzU5UuggalK6OiMGsFEsYbStb-ACLcBGAsYHQ/s1600/fondotitu.png") ;
+	background-size: 1270px;
+}
+#logo{
+	padding-bottom: 10px;
+	width: 400px;
+}
+/*------------------------------menu-----------------------*/
+/*tamaño del menu*/
+#wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+/*estilo del menu */
+nav {
+  position: relative;
+  width: 980px;
+  height: 30px;
+  margin: 0 auto;
+  background: transparent;
+}
+/*posicion de los objetos del  header*/
+header, nav { 
+  display: block;
+}
+/*posicion del menu*/
+nav ul#menu {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+} 
+/*posicion de los items del menu*/
+li{
+  position: relative;
+  display: inline-block;
+}
+/*texto de los menus*/
+nav ul#menu li a {
+  display: block;
+  height: 30px;
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 30px;
+  color: #00b5e2;
+  text-decoration: none;
+  padding:0 15px;
+}
+/*pasar el mouse sobre el text de los menus*/
+nav ul#menu :hover > a {
+  background: #ffcc99;
+  border-radius:0px;
+}
+
+/*nav ul#menu li*/:hover > .sub{
+  display: block;
+}
+/*submenu*/
+.sub {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 430px;
+  height: 150px;
+  padding: 15px;
+  background: #4f758b;
+  display: none;
+  border-radius:0px;
+
+}
+/*espacio entre columnas*/
+ul#menu ul {
+  float: left;
+  width: 200px;
+  margin: 0px;
+  padding: 0px;
+}
+/*text del sub menu*/
+ul#menu ul li a {
+  width:170px;
+  height: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  font-size:15px;
+
+}
+
+/* sub titulo menudespegable
+ul#menu ul li:first-child a {
+  font-size: 1.2em;
+  color: #4cb1f2;
+}
+*/
+/*pasar el mouse texto del sub menu negro*/ 
+ul#menu ul li a:hover {
+  color: black;
+  background: none;
+}
+/*-----------------------------------main-----------------------*/
+.serititu{
+  display: block;
+  text-align: center;
+}
+.titu{
+  width: 1000px;
+}
+/*grid*/
+.contenedor {
+  display: grid;
+  grid-template-columns: 950px 400px;
+  grid-gap: 30px 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  font-style:normal; 
+  font-size: 15px;
+  box-sizing: 100px;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.imgcont{
+  display:inline;
+  margin:0px;  
+}
+h2{
+  display:inline;
+  position:absolute;
+  padding-left:10px;
+  box-sizing:border-box;
+  margin:0px;
+  cursor: pointer;
+}
+h3{
+  display: inline;
+  position: absolute;
+  color: #00b5e2;
+  top: 1;
+  bottom: 0;
+  left: 420px;
+  right: 0;
+  width: 50%;
+  height: 75%;
+  margin: 0px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+small{
+  display: inline;
+  position: absolute;
+  color: grey;
+  top: 1;
+  bottom: 0;
+  left: 520px;
+  right: 0;
+  width: 50%;
+  height: 73%;
+  margin: 0px;  
+}
+.intro{
+  display:inline;
+  color:grey;
+  font-size:15px;
+  font-weight:none;
+  grid-column: 1/1;
+  position: absolute;
+  cursor: pointer;
+  top: 1;
+  bottom: 0;
+  left: 310px;
+  right: 0;
+  width: 50%;
+  height: 60%;
+  margin: 0px;
+}
+.not{
+	grid-column: 1/1;
+	text-align: left;
+  display:inline;
+  margin:0px;
+  box-sizing:border-box;
+  position: relative;
+  border-bottom: 1px solid;
+  border-color: #0b4f6c;
+  padding-bottom: 20px;
+}
+.notlast{
+  grid-column: 1/1;
+  text-align: left;
+  display:inline;
+  margin:0px;
+  box-sizing:border-box;
+  position: relative;
+}
+
+
+/*------------------------suscribete-----------------------*/
+/*celda*/
+.sug{
+	grid-column:2/2;
+	outline-color: 10px black solid;
+	display: inline;
+	text-align: start;
+	margin-left: 0px;
+  float:right;
+}
+/*mail*/
+label{
+  padding:10px;
+  color:black;
+}
+input:focus {
+  background-color: #0b4f6c;
+}
+input {
+	margin: 10px;
+  width:200px;
+  height:20px;
+  border:2px solid black;
+  border-radius:4px;
+}
+button{
+  border:15x;
+  border-radius:5px;
+  width:120px;
+  box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#0b4f6c;
+	font-family:Arial;
+	font-size:17px;
+  font-weight:bold;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed; 
+}
+button:hover{
+  background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+  background-color:grey;
+}
+button:active{
+  position:relative;
+	top:1px;
+}
+/*titulo de uscribete*/
+legend{
+  padding:5px 10px;
+  font-size:20px;
+  background-color:#4f758b;
+  color:#ffcc99;
+}
+/*contenedor de suscribete*/
+fieldset{
+  font-size:20px;
+  padding:40px;
+
+  border-width:6px ;
+  border-left:0px;
+  border-bottom:0px;
+  border-right:0px;
+  border-color:#ffcc99;
+  color:#00b5e2;
+}
+.aside{
+  font-weight: bolder;
+}
+/*	
+table,th{
+	border-collapse: collapse;
+	padding: 15px;
+	text-align: center;
+	width: 10px;
+	font-size: 20px;
+	margin: auto;
+	font-weight: bold;
+}
+table,td{
+	border-collapse: separate;
+	padding: 20px;
+	text-align: left;
+	font-size: 30px;
+	margin: auto;
+	font-weight: bolder;
+	padding-bottom: 60px;
+}
+*/
+.video{
+	width: 400px;
+	height: 235px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*noticias*/
+.img{
+	height: 225px;
+	width: 400px;
+	margin: auto;
+}
+.pa{
+	width: 400px;
+}
+.ug{
+	width: 400px;
+}
+.top{
+	width: 400px;
+}
+/*----------------------------nuestras redes-------------------------------*/
+/*celda*/
+.foll{
+  text-align:start;
+}
+/*imagenes*/
+.soc{
+  width:25px;
+  margin-right:0px;
+  display:inline;
+  float:left;
+  padding-bottom:0px;
+  cursor: pointer;
+}
+/*contenedor de iconos y texto*/
+.liaside1{
+  display:block; 
+  padding-bottom:10px;
+  padding-top:0px;
+}
+.liaside2{
+  display:block;
+  padding-bottom:px;
+  padding-top:15px;
+  
+}
+.liaside3{
+  display:block;  
+  padding-bottom:5px;
+  padding-top:15px;
+}
+.liaside4{
+  display:block;
+  padding-bottom:5px;
+  padding-top:15px;
+}
+/*texto nuestras redes*/
+#ti{
+  padding:5px 10px;
+  font-size:20px;
+  background-color:#4f758b;
+  color:#ffcc99;
+}
+/*caja contenedora*/
+#ti1{
+  font-size:20px;
+  padding:40px;
+  padding-top:20px;
+  padding-bottom:10px;
+  border-width:6px ;
+  border-left:0px;
+  border-bottom:0px;
+  border-right:0px;
+  border-color:#ffcc99;
+  
+
+}
+/*texto*/
+p{
+  display:inline;
+  padding-left:100px;
+  padding-bottom:0px;
+  color:black;
+  font-size:15px;
+}
+/*ul estructura de iconos y texto*/
+#aside{
+  padding:0px;
+  margin:0px;
+}
+/*----------------------------footer-------------------------*/
+.foo{
+	color: #00b5e2;
+  font-size:15px;
+  font-weight:bold;
+}
+/*imagen*/
+#red{
+	padding-bottom:;
+	width: 100px;
+}
+
+footer{  
+background-image: url(https://1.bp.blogspot.com/-QrY8Aitsz9A/XsmKZkYw86I/AAAAAAAAOhc/_pBzVEY5mig87m8mgR3gFxAE3Cky7IWcQCLcBGAsYHQ/s1600/fondotitufooter.png);
+background-size:800px;
+height:100px;
+word-spacing: 5px;
+text-align: center;
+padding-top:70px;
+}
+@media only screen and (max-width: 600px){
+header{
+text-align: center;
+padding: 80px;
+color: white;
+margin: auto;
+}
+#logo{
+padding-bottom: 10px;
+width: 200px;
+}
+
+}
